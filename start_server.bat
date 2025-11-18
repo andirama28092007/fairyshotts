@@ -1,0 +1,6 @@
+@echo off
+echo Installing Python dependencies...
+pip install -r requirements.txt
+
+echo Starting Fairyshotts Flask application...
+python app.py

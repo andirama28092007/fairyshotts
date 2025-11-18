@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Fairyshotts - Premium Digital Camera Shop</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+    />
+
+    <!-- Bootstrap 5 CSS -->
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    />
+
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <!-- Header -->
+    <header class="py-2">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand d-flex align-items-center" href="{{ url_for('index') }}">
+                        <img src="{{ url_for('static', filename='img/logo1.png') }}" alt="Fairyshotts Logo" class="rounded-circle me-2" width="60" height="60" style="border: 3px solid white;" />
+                        <span class="logo-text">Fairy<span class="logo-highlight">shotts</span></span>
+                    </a>
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarNav"
+                        aria-controls="navbarNav"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link text-white px-3" href="{{ url_for('index') }}">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white px-3" href="{{ url_for('products') }}">Products</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white px-3" href="{{ url_for('about') }}">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white px-3" href="{{ url_for('index') }}#contact">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="float-element">About Fairyshotts</h1>
+                <p class="float-element" style="animation-delay: 0.2s;">Learn more about our story, mission, and commitment to vintage cameras</p>
+                <!-- Owner Photo -->
+                <div class="owner-photo-container float-element" style="animation-delay: 0.4s; margin-top: 40px;">
+                    <div class="owner-frame">
+                        <img src="{{ url_for('static', filename='img/owner_foto.jpeg') }}" alt="Andi Tenri Uly Ganiyyu Wulandari" class="owner-photo rounded-circle" />
+                    </div>
+                    <div class="owner-name mt-2">Andi Tenri Uly Ganiyyu Wulandari</div>
+                    <div class="owner-title">Owner of Fairyshotts</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section py-5" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="text-center mb-4">
+                    <img src="{{ url_for('static', filename='img/logo1.png') }}" alt="Fairyshotts Logo" class="img-fluid" style="max-height: 150px; object-fit: contain;">
+                </div>
+                <h2>Fairyshotts Digital Camera Shop</h2>
+                <p>Founded in 2023, Fairyshotts has established itself as a trusted destination for vintage and classic digital cameras. We specialize in carefully curated second-hand cameras that offer exceptional quality at affordable prices.</p>
+                
+                <h5>Our Mission</h5>
+                <p>At Fairyshotts, we believe that vintage cameras have a unique charm and character that modern cameras often lack. We are dedicated to preserving the history of photography by offering high-quality vintage cameras to enthusiasts and collectors.</p>
+                
+                <h5>Why Choose Us?</h5>
+                <div class="row features-row">
+                    <div class="col-md-6 mb-3">
+                        <div class="d-flex">
+                            <div class="feature-icon me-3">
+                                <i class="fas fa-camera text-primary"></i>
+                            </div>
+                            <div>
+                                <h6>Premium Quality</h6>
+                                <p class="mb-0">Every camera is thoroughly inspected for functionality and authenticity before being listed.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <div class="d-flex">
+                            <div class="feature-icon me-3">
+                                <i class="fas fa-tag text-primary"></i>
+                            </div>
+                            <div>
+                                <h6>Best Prices</h6>
+                                <p class="mb-0">We offer competitive pricing on all our vintage camera collection without compromising quality.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <div class="d-flex">
+                            <div class="feature-icon me-3">
+                                <i class="fas fa-shipping-fast text-primary"></i>
+                            </div>
+                            <div>
+                                <h6>Fast Shipping</h6>
+                                <p class="mb-0">Quick and secure shipping with tracking to ensure your camera arrives safely.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <div class="d-flex">
+                            <div class="feature-icon me-3">
+                                <i class="fas fa-headset text-primary"></i>
+                            </div>
+                            <div>
+                                <h6>Expert Support</h6>
+                                <p class="mb-0">Our knowledgeable team provides guidance on camera selection and usage.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <h5>Our Story</h5>
+                <p>Fairyshotts was born from a passion for vintage photography and the desire to make classic digital cameras accessible to everyone. Our founder discovered a collection of rare digital cameras at a local market and realized there was a market for these unique devices that bridge the gap between analog and modern digital photography.</p>
+                
+                <p>Since then, we've helped hundreds of customers find their perfect vintage camera, whether for everyday use, collection, or as a nostalgic reminder of their early digital photography days.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container">
+            <div class="row g-4 mb-4">
+                <div class="col-12 col-md-4">
+                    <div class="footer-column">
+                        <h3>Fairyshotts</h3>
+                        <p>Your trusted source for vintage and classic digital cameras. We specialize in quality second-hand cameras at affordable prices.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="footer-column">
+                        <h3>Quick Links</h3>
+                        <a href="{{ url_for('index') }}">Home</a>
+                        <a href="{{ url_for('products') }}">Products</a>
+                        <a href="{{ url_for('about') }}">About Us</a>
+                        <a href="{{ url_for('index') }}#contact">Contact</a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="footer-column">
+                        <h3>Contact Us</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> 📍 Makassar, Indonesia</p>
+                        <p><i class="fas fa-phone"></i> 📱 WhatsApp: <a href="https://wa.me/62881019953608" target="_blank" style="color: #e0d6f0;">+62 881-0199-53608</a></p>
+                        <p><i class="fas fa-envelope"></i> 📧 Email: fairyyshots@gmail.com</p>
+                        <p><i class="fas fa-instagram"></i> 📸 Instagram: @fairyyshots</p>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Fairyshotts. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
