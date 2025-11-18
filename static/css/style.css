@@ -752,10 +752,173 @@ footer {
     }
 }
 
-/* Responsive hero section for extra small devices */
+/* Enhanced responsive adjustments for hero section */
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+@media (max-width: 992px) {
+    .hero {
+        height: 450px;
+    }
+    .hero h1 {
+        font-size: 3rem;
+    }
+    .section-title {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        height: auto;
+        min-height: 400px;
+        padding: 30px 15px;
+    }
+    .hero h1 {
+        font-size: 2.5rem;
+        margin-bottom: 15px;
+    }
+    .hero p {
+        font-size: 1.1rem;
+        padding: 0 10px;
+    }
+    .section-title {
+        font-size: 2rem;
+    }
+    .btn-shop {
+        display: block;
+        margin: 5px auto;
+        width: 80%;
+        max-width: 300px;
+    }
+    .highlight-card {
+        margin-bottom: 20px;
+    }
+    .featured-highlights {
+        padding: 30px 20px;
+    }
+    .owner-photo-container {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero {
+        padding: 20px 10px;
+        min-height: 350px;
+    }
+    .hero h1 {
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+    .hero p {
+        font-size: 1rem;
+        padding: 0 10px;
+        margin-bottom: 20px;
+    }
+    .section-title {
+        font-size: 1.8rem;
+    }
+    .highlight-card {
+        padding: 20px 15px;
+    }
+    .highlight-icon {
+        font-size: 2.5rem;
+    }
+    .featured-highlights {
+        padding: 20px 15px;
+    }
+    .category-link {
+        display: block;
+        margin: 5px 0;
+        text-align: center;
+    }
+    .owner-photo {
+        width: 100px;
+        height: 100px;
+    }
+    .owner-name {
+        font-size: 1rem;
+        margin-top: 10px;
+    }
+    .owner-title {
+        font-size: 0.8rem;
+    }
+    .owner-photo-container {
+        margin-top: 15px;
+    }
+}
+
+/* Extra small devices (phones, 400px and below) */
+@media (max-width: 400px) {
+    .hero {
+        padding: 15px;
+        min-height: 320px;
+    }
+    .hero h1 {
+        font-size: 1.8rem;
+        margin-bottom: 10px;
+    }
+    .hero p {
+        font-size: 0.9rem;
+        padding: 0 5px;
+        margin-bottom: 15px;
+    }
+    .section-title {
+        font-size: 1.6rem;
+    }
+    .btn-shop {
+        width: 90%;
+        font-size: 1rem;
+        padding: 10px 20px;
+        margin: 5px 0;
+    }
+    .product-image {
+        height: 160px;
+    }
+    .owner-photo {
+        width: 80px;
+        height: 80px;
+    }
+    .owner-name {
+        font-size: 0.9rem;
+        margin-top: 8px;
+    }
+    .owner-title {
+        font-size: 0.75rem;
+    }
+}
+
+/* Mobile-friendly hero content layout */
+@media (max-width: 768px) {
+    .hero-content {
+        gap: 15px;
+        width: 100%;
+    }
+
+    .owner-frame {
+        margin: 10px auto;
+    }
+}
+
+/* Responsive adjustments for animations */
 @media (max-width: 480px) {
     .hero-content {
-        padding: 0 15px;
+        padding: 0;
     }
     .float-element {
         animation: none; /* Disable animations on small screens to improve performance */
